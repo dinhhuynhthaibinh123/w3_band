@@ -62,7 +62,7 @@ html {
 
 #nav .subnav {
   min-width: 160px;
-  /* display: none; */
+  display: none;
   background-color: #fff;
   position: absolute;
   top: 100%;
@@ -96,9 +96,15 @@ html {
   background-color: #f44336;
   cursor: pointer;
 }
+
+
+
+
 #slider {
   min-height: 500px;
 }
+
+
 #content {
 }
 #footer {

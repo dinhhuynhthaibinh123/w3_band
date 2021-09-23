@@ -15,6 +15,8 @@ html {
   height: 46px;
 }
 #nav {
+  /* Để nó chỉ bao phủ thằng nav */
+  display: inline-block;
 }
 #nav li {
   display: inline-block;
@@ -54,6 +56,27 @@ html {
 #nav .subnav li {
   display: block;
 }
+
+.nav-down-icon {
+  font-size: 12px;
+} 
+
+#header .search-icon{
+  font-size: 16px;
+  color: #fff;
+  
+}
+#header .search-btn{
+  line-height: 46px;
+  float: right;
+  padding: 0 23px;  
+}
+#header .search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+
 #slider {
 }
 
