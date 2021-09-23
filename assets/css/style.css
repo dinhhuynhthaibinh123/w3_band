@@ -88,6 +88,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 #header .search-btn {
   float: right;
@@ -97,25 +98,48 @@ html {
 #header .search-icon {
   color: #fff;
   font-size: 15px;
- 
 }
 #header .search-btn:hover {
   background-color: #f44336;
   cursor: pointer;
 }
 
-
-
-
 #slider {
-  min-height: 500px;
+  /* Bằng % tỷ lệ theo chiều ngang */
+  padding-top: 50%;
   margin-top: 46px;
+  background: url(/assets/img/slider/chicago.jpg) top center / cover no-repeat;
+  position: relative;
+}
+#slider .text-content {
+  position: absolute;
+  margin: 47px;
+  color: white;
+  bottom: 0;
+  /*Cách 1: thuộc tính left transform và left dùng để căng giữa */
+  /* transform: translateX(-50%);
+  left: 50%; */
+  /* Cách 2: dùng width: 100% và text-align: center */
+  /* width: 100%;
+  text-align: center; */
+  /* Cách 3: dùng left: 0 và right: 0 giống cách kéo thanh nav full width*/
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+#slider .text-description {
+  margin-top: 25px;
+  font-size: 15px;
 }
 
+#slider .text-heading h2{
+  font-weight: 200;
+  font-size: 24px;
+}
 
 #content {
-  height:1000px;
-  background-color: #ccc;
+  height: 1000px;
+  background-color: #555;
 }
 #footer {
 }
