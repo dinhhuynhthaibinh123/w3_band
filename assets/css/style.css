@@ -23,37 +23,81 @@ html {
 #main {
   margin: 0;
 }
+
 #nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style-type: none;
 }
 
-#nav li {
+#nav > li {
   display: inline-block;
+}
+#nav li {
+  position: relative;
 }
 
 #nav li a {
-  display: inline-block;
   text-decoration: none;
-  color: #fff;
   line-height: 46px;
   padding: 0 24px;
+  display: block;
 }
-/* Nên đặt vào thể li thay vi a */
-#nav li:hover a {
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+/* Nên đặt vào thẻ li thay vì a */
+#nav > li:hover > a,
+#nav .subnav li:hover a {
   color: #000;
   background-color: #ccc;
 }
 
-#nav .subnav {
-  /* display: none; */
+#nav li:hover .subnav {
+  display: block;
 }
 
+#nav .subnav {
+  min-width: 160px;
+  /* display: none; */
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 12px;
+  height: 38px;
+}
+.nav-arrow-down {
+  font-size: 12px;
+}
 #header {
   height: 46px;
   background-color: #000;
 }
+#header .search-btn {
+  float: right;
+  line-height: 46px;
+  padding: 0 21px;
+}
+#header .search-icon {
+  color: #fff;
+  font-size: 15px;
+ 
+}
+#header .search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
 #slider {
   min-height: 500px;
-  background-color: #333;
 }
 #content {
 }
