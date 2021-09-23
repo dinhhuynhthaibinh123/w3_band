@@ -81,6 +81,13 @@ html {
 #header {
   height: 46px;
   background-color: #000;
+  /* Cố định headr trên top
+  Khi thêm positon fixed thì thẻ div header mắt tính chất width full màn hình nền dùng thẻ right để nó sát vách phải
+  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 #header .search-btn {
   float: right;
@@ -102,10 +109,13 @@ html {
 
 #slider {
   min-height: 500px;
+  margin-top: 46px;
 }
 
 
 #content {
+  height:1000px;
+  background-color: #ccc;
 }
 #footer {
 }
