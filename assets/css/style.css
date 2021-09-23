@@ -113,7 +113,7 @@ html {
 }
 #slider .text-content {
   position: absolute;
-  margin: 47px;
+  margin-bottom: 47px;
   color: white;
   bottom: 0;
   /*Cách 1: thuộc tính left transform và left dùng để căng giữa */
