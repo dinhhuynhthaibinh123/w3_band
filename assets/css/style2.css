@@ -105,7 +105,50 @@ html {
 
 #content {
   background-color: #999;
-  height: 1000px;
+  height: 2000px;
 }
+
+#content .section-content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+#content .section-heading {
+  font-size: 30px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-align: center;
+}
+#content .section-sub-heading {
+  font-size: 15px;
+  margin: 15px 0;
+  text-align: center;
+  opacity: 0.7;
+}
+#content .about-text {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+#content .member-list {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-around;
+}
+#content .member-item {
+ text-align: center;
+}
+#content .member-name {
+  margin: 15px 0;
+  font-size: 15px;
+}
+#content .member-avatar {
+  width:154px;
+  margin-bottom: 16px;
+}
+
 #footer {
 }
