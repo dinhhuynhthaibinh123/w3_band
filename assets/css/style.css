@@ -6,10 +6,30 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: Helvetica, Arial, sans-serif;
 }
 /* common */
+.row {
+  display: flex;
+  justify-content: space-around;
+}
 
+.col {
+  padding: 0 8px;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.m-lr-8 {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
 /* 
  Từ ngoài vào trong 
  Từ trên xuống dưới
@@ -143,7 +163,6 @@ html {
 }
 
 #content {
-  height: 2000px;
   background-color: #fff;
 }
 #content .section-content {
@@ -177,8 +196,6 @@ html {
 #content .member-list {
   margin-top: 48px;
   margin-bottom: 32px;
-  display: flex;
-  justify-content: space-around;
 }
 
 #content .member-item {
@@ -190,7 +207,7 @@ html {
   margin: 15px 0;
 }
 #content .member-avatar {
-  width: 154px;
+  width: 70%;
   border-radius: 5px;
 }
 
@@ -232,13 +249,9 @@ html {
 
 .places-list {
   margin: 32px 8px;
-  display: flex;
-  justify-content: space-around;
 }
 .places-item {
-  width: 260px;
-  height: 386px;
-  padding: 0 8px;
+  /* height: 386px; */
 }
 .places-img {
   width: 100%;
@@ -283,8 +296,7 @@ html {
   background-color: #ccc;
 }
 
-#footer {
-}
+
 
 .modal {
   align-items: center;
@@ -307,7 +319,7 @@ html {
   background-color: #fff;
   width: 900px;
   min-height: 200px;
-  animation: modalDown ease .5s;
+  animation: modalDown ease 0.5s;
 }
 .modal-close {
   position: absolute;
@@ -370,12 +382,78 @@ html {
   text-align: right;
 }
 
-
 @keyframes modalDown {
-  from { 
+  from {
     transform: translateY(-180px);
   }
-  to{
+  to {
     transform: translateY(0);
   }
+}
+/* Contact form */
+.contact-content {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 20px;
+  display: inline-block;
+  line-height: 1.6;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form .form-sumit-btn {
+  background-color: #000;
+  border: 1px solid #000;
+  color: white;
+  padding: 8px 12px;
+  float: right;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.contact-form .form-sumit-btn:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+/* map section */
+.map-section img{
+  width: 100%;
+}
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .social a{
+  text-decoration: none;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.copyright a:hover,
+#footer .social a:hover{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.copyright{
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.copyright a{
+  color: rgba(0, 0, 0, 0.7);
 }
